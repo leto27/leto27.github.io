@@ -1,20 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 
 
 
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next muse use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
 
 
 
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
+
 
 
 
@@ -37,38 +45,27 @@
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
 
 
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
 
 
   <meta name="keywords" content="Hexo, NexT" />
@@ -76,11 +73,6 @@
 
 
 
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.1.0" />
 
 
 
@@ -100,10 +92,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Pisces',
-    sidebar: {"position":"left","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
-    motion: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
       author: '博主'
@@ -126,11 +120,7 @@
 
 
 
-  <title> Half Price </title>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
+  <title>Half Price</title>
   
 
 
@@ -140,11 +130,9 @@
 
 
 
+</head>
 
-
-
-
-
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -152,19 +140,11 @@
   
 
   <div class="container sidebar-position-left 
-   page-home 
- ">
+  page-home">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div>
-<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
-<input type="search" name="q" id="search" autocomplete="off" autocorrect="off" autocapitalize="off" maxlength="20" placeholder="Search" />
-<input type="hidden" name="q" value="site:<%- config.url.replace(/^https?:\/\//, '') %>">
-</form>
-</div>
-
-<div class="site-brand-wrapper">
+      <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
@@ -206,42 +186,12 @@
         </li>
       
         
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-        
         <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+          <a href="/archives/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
           </a>
         </li>
       
@@ -273,13 +223,17 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://leto27.github.io/2017/10/17/关于韦恩斯坦事件/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LiYR">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://ww3.sinaimg.cn/mw690/ec8e5b48jw8fd6dx72xbhj20ku0lcjt8.jpg">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -292,16 +246,8 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2017/10/17/关于韦恩斯坦事件/" itemprop="url">
-                  关于韦恩斯坦事件
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2017/10/17/关于韦恩斯坦事件/" itemprop="url">关于韦恩斯坦事件</a></h1>
         
 
         <div class="post-meta">
@@ -364,7 +310,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -373,31 +321,33 @@
       
         
           
-          关于韦恩斯坦事件结合刚刚在看的书（走出抑郁），联想到最近那件事，乱扯几句。一个行为极其恶劣的人，能持续蹦跶几十年，受害者众多，而她们此前没发声，除了因为真的害怕事业被毁外还有几个原因。
-当然，受害人第一时间的弱力度反抗，一方面是和韦恩斯坦的社会身份不对等造成，但一定也有性别因素在里面，我想说的是后者
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/10/17/关于韦恩斯坦事件/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <h1 id="关于韦恩斯坦事件"><a href="#关于韦恩斯坦事件" class="headerlink" title="关于韦恩斯坦事件"></a>关于韦恩斯坦事件</h1><p>结合刚刚在看的书（<em>走出抑郁</em>），联想到最近那件事，乱扯几句。一个行为极其恶劣的人，能持续蹦跶几十年，受害者众多，而她们此前没发声，除了因为真的害怕事业被毁外还有几个原因。</p>
+<p><em>当然，受害人第一时间的弱力度反抗，一方面是和韦恩斯坦的社会身份不对等造成，但一定也有性别因素在里面，我想说的是后者。</em></p>
+<p><strong>1、</strong>韦恩斯坦应该极其善于攻击人的心理弱点。据已有的描述（我忘了是谁的…）她当时反复被韦恩斯坦要求时，甚至产生了是不是自己有问题的错觉。比如韦恩斯坦在下手前先吹嘘自己睡过多少女明星，就是为了当他向当前对象提出性要求时，让对方将自己和之前的人比较，产生出是不是自己太在意太计较的心理。</p>
+<p><strong>2、</strong>社会预期问题。（1）社会对女性形象的要求包含着顺从（不具备攻击性），以及（2）社会对性侵犯行为的受害者谴责怪象（这些已有先例 所以变成了一种预期），都使得一些受害女性在彼时不敢第一时间意识到自己的利益需求，进行强有力的反抗。根据一些人的描述，她们在韦恩斯坦第一时间的语言侵犯或身体触碰侵犯时，会先震惊，然后假装岔开话题之类的，以至于韦恩斯坦的骚扰行为反反复复,且变本加厉（比如我开始也不理解 怎么都拒绝了 还发展到被要求去看他洗澡……）。现在意识到，很可能是因为女性在面对骚扰和不舒服的现象时，首先倾向于“表面和平化”（我乱起的名字）。</p>
+<p>我在想男性遇到冲突时第一时间是啥反应，比如莫名其妙被人打了一拳。我印象中男性会先是一愣，然后还对方一拳……然后可能双方就厮打起来了。但其实开始那一拳可能人家也不是特别认真的。一方面归结为男性荷尔蒙的易燃易爆炸性质，另一方面我感觉也是社会预期因素。反正我觉得哈，以前我认识的那些小混混男生，动不动就打架就是为了维护自己雄性形象。社会对男性的预期是“你不能怂”，所以他们遇到侵犯行为时的第一反应，并不一定是他们自己真的觉得被冒犯了。他们第一时间跳起来，是因为也要满足一种社会期许，那一拳要是第一时间没还回去，大概就被认为没有男子气概了。</p>
+<p>扯这么多就是想说，女性应该也有这个因素。韦恩斯坦能在受害者第一次的拒绝后还继续纠缠变本加厉，很大可能是因为最开始的那个拒绝力度不够。你脑补下，假如他是在调戏一个男性，对方第一时间给他一拳，他还能接下来说，你要不要来看我洗澡的话 ？</p>
+<p>关于（2）是所有受害者此前没有发声的重要原因。不仅是性侵犯，实际上只要涉及到性，女性总是不能启齿的那一方，比如女性也不能说自己享受性。总之这件事牵扯到性了，女性在社会预期里就总是不能直白发声。这种关于性的针对于女性的社会预期，营造的是一种“羞耻感”的心理状态，更不用提这个事件里还是一种被侵犯的性。这里的羞耻感还包括了很大程度的恐惧感。最糟糕的是单个个体可能因为这些心理放弃了事后发声，而个体组成环境，越来越多的人不发声时，后来者就更不易发声（牵扯到群体认同 ？）。总之，受害者一方面受害，一方面固化了受害氛围。但这种群体性氛围只要被打破一次就能被破除，比如近期越来越多的人开始揭发👏。</p>
+<p>我没有想谴责受害者，我只是想说这些心理层面的因素真的是太不易觉察，但却至关重要的影响着个体行为，乃至整个事件呈现出的面貌。</p>
+<p>好多人问我最开始问的那个问题，这种人渣咋就能蹦哒这么久 ？他们还加了一句“是你们电影圈的人不行吧 ？”</p>
+<p>不是电影圈的人不行，是人类不行。这个怪象和上世纪三四十年代的法西斯德国有什么区别吗 ？一方面是人性之恶真的超越想象，一方面是人类的弱点也超越想象。而很多时刻，这种弱点并不一定是来自身体的、物质的，很可能是不易察觉却是我们行为根源的心理层面。</p>
+<p><strong>后续碎碎念：</strong></p>
+<p>女性的拒绝是：我 不 要！ 男性的拒绝是，给你一拳……前者很文明，但遇到禽兽的时候，力度差了点。你没办法给听不懂人话的生物说人话啊……但还是希望，社会整体能教会所有自称为“人类”的灵长类：<strong>听懂“人话</strong>，不要就是不要，没有别的意思。</p>
+<p>这话题里还牵扯到，男性们怎么看 ？但我没法写。囿于自己的身体，没办法想象另一性别的态度，以及他们不发声，装作视而不见是因为什么……</p>
+
+          
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
     <footer class="post-footer">
       
@@ -411,6 +361,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -423,13 +377,17 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://leto27.github.io/2017/10/02/30-10-2017/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LiYR">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://ww3.sinaimg.cn/mw690/ec8e5b48jw8fd6dx72xbhj20ku0lcjt8.jpg">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -442,16 +400,8 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2017/10/02/30-10-2017/" itemprop="url">
-                  30/10/2017
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2017/10/02/30-10-2017/" itemprop="url">30/10/2017</a></h1>
         
 
         <div class="post-meta">
@@ -514,7 +464,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -523,30 +475,31 @@
       
         
           
-          4点前30号去考了个IELTS。好久好久没考试了，之前因为自身状况逃过两次临近的考试，所以即使这次考的不好，也安慰自己好歹完成了这个过程，这么来看那条黑狗应该离我远了一些，好事好事👏。但，口语考试还是要准备下话题啊，否则一分钟的时间里我根本想不起来我有啥帮助别人的经历……尤其是记性差，过去的经历忘
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/10/02/30-10-2017/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <h2 id="4点前"><a href="#4点前" class="headerlink" title="4点前"></a>4点前</h2><p>30号去考了个IELTS。好久好久没考试了，之前因为自身状况逃过两次临近的考试，所以即使这次考的不好，也安慰自己好歹完成了这个过程，这么来看那条黑狗应该离我远了一些，好事好事👏。但，口语考试还是要准备下话题啊，否则一分钟的时间里我根本想不起来我有啥帮助别人的经历……尤其是记性差，过去的经历忘记的差不多，过去两年又半死不活，丝毫没有谈资，临场编故事的能力更是差，不多说了，都是泪😢。</p>
+<p>30号那天很热。我一般很少赶中午出去，印象里这边还是冬天，当然时间上节令已过。按南半球的规矩，这里现在是春天，大体相当于北半球的三四月，可谁家的三四月就30度以上啊……二十多年生长在为北半球的北方人不是很懂。总之那天在我暴晒在Sunshine之州的阳光下时，掏出手机一看，33度。后来有人告诉我上周气温有过36度，fine。</p>
+<h3 id="考试时的人"><a href="#考试时的人" class="headerlink" title="考试时的人"></a>考试时的人</h3><p>这个和国内很不一样吧，国内考IELTS大概99%都是年轻人，为了留学考A类，当然可能我见识少乱猜的。这边很大比例是考G类，至少我那个考场是，各肤色人民团结在IELTS考试周围，或为移民或为留学。中国人真的太多了……也许和我选的考场有关 ？毕竟这是离华人区最近的一个考点。偷听它们对话时，发现不少疑似的WHV，其中又多数是台湾人，可能大家来这边呆了一段时间后就想呆更久，打算换个学生签继续留下，但不知道它们只是为了用学生签再多呆两年挣点钱，还是真心想找机会留下，心思各异吧。</p>
+<h3 id="考试"><a href="#考试" class="headerlink" title="考试"></a>考试</h3><p>一开始卷子就发错了。AU这边的考试顺序很可能是全世界独一处，可能为了标榜自己是南半球的，要与众不同。最先考的是写作，阅读次之，最后听力。好几个考场监考人员，发卷子前都不低头看一眼自己发的是啥，把阅读卷全部发下去后，才被考生告知发错了，然后再收上来。错误真的蠢，感觉天朝这样的考试大国，无论考嘛试，几个监考人员，应该都不太会犯这种错误。听力没有耳机，是全场公放的，可能其它考点会有差别，但我估计天朝的考场，一人一耳机应该是标配了。</p>
+<p>关于铅笔！天朝是“下蛋笔”，有人打趣大家花费近两千块是来买笔的，这边不一样，就是需要削的HB铅笔。考场提供旧的三只铅笔，旧橡皮，削笔刀，这些东西用完了留下，下一次考试继续重复利用。真 环 保♻️</p>
+<h2 id="4点后"><a href="#4点后" class="headerlink" title="4点后"></a>4点后</h2><p>那天考完试后被Sue约着去了meetup上的一个活动，韩国人办的市中心公园里的BBQ，Sue说她一个人会犹豫，如果我去就不犹豫了。那天真的累，头几天因为考试临近而焦虑，睡眠也受影响，有一天睡眠太差情绪也崩溃掉。那次很沮丧，因为一周前的某一日在Adelaide St上走着时，突然觉得自己魂儿回来了，又哭又笑，欣喜异常，有了很多想做的事，也能控制自己身体去做，开心至极时还告诉了真爱和爸妈。但这次崩溃还是很沮丧的，一周的正常状态被打破，自己被打回原形，还有一种欺骗了真爱和爸妈的愧疚感。但还好就那半天时间的崩溃。</p>
+<p>30号尽管非常累，但还是很有欲望做事情的，于是答应了Sue一同前往活动。路上遇到两个HK女性，年龄目测蛮大了，英语好像不怎么懂 ？也不会用网络，可能听见我们讲普通话，迎面拦下我们，问机场怎么走，还要给她们详细写在纸上。最后问我们哪里人，我们说大陆的，其中一位说我们来自HK，一家人一家人……其实不是很懂干嘛突然这么表态，可能帮了她们，又政治敏感，必须提这么一句吧。我在这里这么写，可能看到的人会觉得是我自己的敏感，但我是因为当时那人的说话态度和口吻有的如此感受，仅此而已。</p>
+<p>活动在City的一处公园里，见面前Sue告诉我有五十多人，去了现场……也就五六个人，后面陆陆续续，也不到十人。她觉得自己受到了欺骗，因为是组织者韩国小哥信息上告诉她的，但我怀疑是韩国人一时头晕数字写错了。那天的参与者有三个韩国人，其中一对是情侣，一个日本人，一个伊朗人（已移民AU），一个瑞典人，一个澳洲越南裔，再加上我和Sue两个中国人。我打趣除了瑞典人，我们这就是亚洲人民的聚会，但其实那个瑞典小哥，基本就是半个亚洲人了。他有一个日本女友，因此在日本呆过几年，会说流利的日语，现场直接开始和日本姑娘用日语对话……我在旁目瞪口呆.jpg。</p>
+<p>（未完待续</p>
+<p>时间过去太久了，续不上了抱歉。只记得BBQ后我们去桥上看了烟火，好像是因为庆祝女王生日，接着想找酒吧继续，结果因为几个人没带身份证明，找了几家pub都没进去，最后随便找了个地方买了饮料坐着聊了一会儿，因为语言不通（其实日本人和韩国人的英文都不好）大家就很尬的聊一些很浅的东西。</p>
+<p>此后再也没见过那伙人，倒是Sue好像又去参加过一次她们的聚会。</p>
+
+          
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
     <footer class="post-footer">
       
@@ -560,6 +513,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -572,13 +529,17 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://leto27.github.io/2017/08/06/关于我在这里遇到的人/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LiYR">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://ww3.sinaimg.cn/mw690/ec8e5b48jw8fd6dx72xbhj20ku0lcjt8.jpg">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -591,16 +552,8 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2017/08/06/关于我在这里遇到的人/" itemprop="url">
-                  关于我在这里遇到的人
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2017/08/06/关于我在这里遇到的人/" itemprop="url">关于我在这里遇到的人</a></h1>
         
 
         <div class="post-meta">
@@ -641,7 +594,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -650,31 +605,21 @@
       
         
           
-          关于我在这里遇到的人同house里 不说话姑娘 和 不说话姑娘## 
+            <h1 id="关于我在这里遇到的人"><a href="#关于我在这里遇到的人" class="headerlink" title="关于我在这里遇到的人"></a>关于我在这里遇到的人</h1><h2 id="同house里-不说话姑娘-和-不说话姑娘"><a href="#同house里-不说话姑娘-和-不说话姑娘" class="headerlink" title="同house里 不说话姑娘 和 不说话姑娘"></a>同house里 不说话姑娘 和 不说话姑娘</h2><p>## </p>
 
           
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/08/06/关于我在这里遇到的人/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
     <footer class="post-footer">
       
@@ -688,6 +633,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -700,13 +649,17 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://leto27.github.io/2017/07/30/730/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LiYR">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://ww3.sinaimg.cn/mw690/ec8e5b48jw8fd6dx72xbhj20ku0lcjt8.jpg">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -719,16 +672,8 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2017/07/30/730/" itemprop="url">
-                  730
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2017/07/30/730/" itemprop="url">730</a></h1>
         
 
         <div class="post-meta">
@@ -769,7 +714,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -778,33 +725,23 @@
       
         
           
-          昨晚的梦境里是她，
-
-两周后（8/13）：完了 我上面写的”她“是谁啊…
+            <p>昨晚的梦境里是她，</p>
+<hr>
+<p>两周后（8/13）：完了 我上面写的”她“是谁啊…</p>
 
           
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/07/30/730/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
     <footer class="post-footer">
       
@@ -818,6 +755,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -830,13 +771,17 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://leto27.github.io/2017/07/26/726/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LiYR">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://ww3.sinaimg.cn/mw690/ec8e5b48jw8fd6dx72xbhj20ku0lcjt8.jpg">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -849,16 +794,8 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2017/07/26/726/" itemprop="url">
-                  Bullshit of 0726
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2017/07/26/726/" itemprop="url">Bullshit of 0726</a></h1>
         
 
         <div class="post-meta">
@@ -921,7 +858,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -930,34 +869,34 @@
       
         
           
-          Time: 7/26
-Place: UQ
-Bullshit of TodayART MUSEUM of UQVideo: The CallingArtist：Angelica Mesiti
-分屏式！！！！！！！！（我乱叫的）
-三块屏幕。内容为同一场景不同机位，近景、远景或者不同角度。画面内容的时间性
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/07/26/726/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <p><strong>Time</strong>: 7/26</p>
+<p><strong>Place</strong>: UQ</p>
+<h1 id="Bullshit-of-Today"><a href="#Bullshit-of-Today" class="headerlink" title="Bullshit of Today"></a>Bullshit of Today</h1><h2 id="ART-MUSEUM-of-UQ"><a href="#ART-MUSEUM-of-UQ" class="headerlink" title="ART MUSEUM of UQ"></a>ART MUSEUM of UQ</h2><h3 id="Video-The-Calling"><a href="#Video-The-Calling" class="headerlink" title="Video: The Calling"></a>Video: The Calling</h3><p>Artist：Angelica Mesiti</p>
+<p>分屏式！！！！！！！！（我乱叫的）</p>
+<p>三块屏幕。内容为同一场景不同机位，近景、远景或者不同角度。画面内容的时间性上可以略微错前错后。但在某些时刻三块屏幕可以拼接为完整的广景。</p>
+<p>想法：这种形式打破了电影的单个视角和单一时间性，但问题在于<strong>1、如何保证三个同时运动的画面不削弱观众对全部内容的注意力 ？2、如果同时表现不同视角是其优点，那这同样是它的缺点，即不具备电影镜头语言的内涵意味，一切都太过直接明显的呈现。</strong></p>
+<p>1、(1)内容的选择。由于这部实验短片的内容是展现某地区普通人民的日常生活，不具备强烈的叙事性，只表现琐碎的场景，这一问题就一定程度上被削弱避免了。（2）减慢某一屏幕的内容运动速度，即中间屏运动时，旁边两个屏幕可以近似为静止镜头。</p>
+<p>2、（待补充）</p>
+<h3 id="Video-2"><a href="#Video-2" class="headerlink" title="Video 2"></a>Video 2</h3><p>没有注意到名字，可能是全部注意被吸引到作品本身。非常的怪异恐怖，能直接引起人的生理不适…</p>
+<p>应该是华裔‘艺术家’，我不是很想称这样的作品是艺术品，这样的创作者为艺术家。不明白UQ为什么买了一部这样的作品 ？是因为文化隔阂吗 ？但这种直觉引起人生理不适的特点应该不会文化有异吧 ？</p>
+<p>内容元素上融合了所谓的医学（脑神经科学）、宗教（更像是邪教，不偏向于任何现实的主流宗教）、电脑构图的现代人、电子乐……这些东西融合起来真的是…一言难尽。那些电脑合成的人像，各种形态，缺少四肢或脑壳被打开（听起来像不像恐怖片 ？）即使形态上看起来像正常人了，又会很扭曲的扭动或者做怪诞的面部表情。现在写这段都觉得背后发凉，真是噩梦。</p>
+<p>用电子合成的人声去念一段宗教哲学式或医学上的话语，没有起伏的固定的发声节奏，电子人脸上不时抽搐或露出奇怪笑容。即使是跳舞扭动，也是非常僵硬不自然的姿态（未来AI要是这样我得失望死）。配乐是现代的电子乐，明显的鼓点节奏，也在一定程度上引发观者的焦虑不安。</p>
+<p>这么说吧，所有元素，都未尝试和观众建立联系共情，都保持了特别远特别冷的距离，再加上扭曲呈现，达到了恐怖怪诞的效果。</p>
+<p>尝试记录这个，是觉得它的确抓到了我的注意力，即使我是极端厌恶这个作品的，冷静下来也有可以总结的东西。而也许，看到我这个bullshit的人里，会有此刻or未来去尝试制作恐怖惊悚类题材电影的，这个纪录或许能提供给你一些灵感，这就够了👌</p>
+
+          
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
     <footer class="post-footer">
       
@@ -971,6 +910,10 @@ Bullshit of TodayART MUSEUM of UQVideo: The CallingArtist：Angelica Mesiti
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -983,13 +926,17 @@ Bullshit of TodayART MUSEUM of UQVideo: The CallingArtist：Angelica Mesiti
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://leto27.github.io/2017/07/10/Another One/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LiYR">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://ww3.sinaimg.cn/mw690/ec8e5b48jw8fd6dx72xbhj20ku0lcjt8.jpg">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1002,16 +949,8 @@ Bullshit of TodayART MUSEUM of UQVideo: The CallingArtist：Angelica Mesiti
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2017/07/10/Another One/" itemprop="url">
-                  Another One
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2017/07/10/Another One/" itemprop="url">Another One</a></h1>
         
 
         <div class="post-meta">
@@ -1052,7 +991,9 @@ Bullshit of TodayART MUSEUM of UQVideo: The CallingArtist：Angelica Mesiti
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1061,30 +1002,26 @@ Bullshit of TodayART MUSEUM of UQVideo: The CallingArtist：Angelica Mesiti
       
         
           
-          近期做的一个曲子。开头是一个月前在悉尼的街头录的一个街头艺人的现场，觉得好听，很想以它展开做些什么，可真的上手弄才知道“命题作文”有多折磨人…所以开始可能略突兀。手头也没有乐器和MIDI键盘什么的，所以完全自己编旋律的念头也打消了，全部元素来自Logic Pro X自带的素材库。前前后后花了两周的周
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/07/10/Another One/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <p><strong>近期做的一个曲子。开头是一个月前在悉尼的街头录的一个街头艺人的现场，觉得好听，很想以它展开做些什么，可真的上手弄才知道“命题作文”有多折磨人…所以开始可能略突兀。手头也没有乐器和MIDI键盘什么的，所以完全自己编旋律的念头也打消了，全部元素来自Logic Pro X自带的素材库。前前后后花了两周的周末去弄，当时也是抱着“很想做些什么送给H”的念头，才有这么大的动力，真的弄出来又觉得好像不太合适发给她。就这样吧。毕竟是自己产的，放在自己的平台上，应该 不会 太突兀吧 ？</strong></p>
+<p><em>另，有发给两个朋友听，她们都有嫌弃中间转的生硬，割裂感重。我承认中间两次强节奏弱旋律真的是因为不知道怎么连接了…但我尽力了（委屈脸</em></p>
+<p><strong>ENJOY!</strong></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SXzZTl5NHTs" frameborder="0" allowfullscreen></iframe>
+
+<p>大陆看不了油管的，点击下面的链接。（心疼<br><a href="http://t.cn/RKMo8CV" target="_blank" rel="external">http://t.cn/RKMo8CV</a></p>
+
+          
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
     <footer class="post-footer">
       
@@ -1098,6 +1035,10 @@ Bullshit of TodayART MUSEUM of UQVideo: The CallingArtist：Angelica Mesiti
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1110,13 +1051,17 @@ Bullshit of TodayART MUSEUM of UQVideo: The CallingArtist：Angelica Mesiti
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://leto27.github.io/2017/06/20/A Ghost Story/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LiYR">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://ww3.sinaimg.cn/mw690/ec8e5b48jw8fd6dx72xbhj20ku0lcjt8.jpg">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1129,16 +1074,8 @@ Bullshit of TodayART MUSEUM of UQVideo: The CallingArtist：Angelica Mesiti
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2017/06/20/A Ghost Story/" itemprop="url">
-                  Film Review of A Ghost Story
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2017/06/20/A Ghost Story/" itemprop="url">Film Review of A Ghost Story</a></h1>
         
 
         <div class="post-meta">
@@ -1179,7 +1116,9 @@ Bullshit of TodayART MUSEUM of UQVideo: The CallingArtist：Angelica Mesiti
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1188,33 +1127,73 @@ Bullshit of TodayART MUSEUM of UQVideo: The CallingArtist：Angelica Mesiti
       
         
           
-          A Ghost StoryPlace: The state Theater (Sydney)
-Time: 6/13/2017
-7/31/2017 Palace Barracks (Brisbane)二刷
-（这篇从6月20号开始动手写，拖了一个多月终于在7月23号完成。拖延还是有好处的，看到了更多的相
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/06/20/A Ghost Story/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <h1 id="A-Ghost-Story"><a href="#A-Ghost-Story" class="headerlink" title="A Ghost Story"></a>A Ghost Story</h1><p><strong>Place</strong>: The state Theater (Sydney)</p>
+<p><strong>Time</strong>: 6/13/2017</p>
+<p>7/31/2017 Palace Barracks (Brisbane)二刷</p>
+<p>（这篇从6月20号开始动手写，拖了一个多月终于在7月23号完成。拖延还是有好处的，看到了更多的相关信息（抱歉，都是借口。</p>
+<p><img src="http://wx4.sinaimg.cn/mw690/6852e8d5gy1fhdx5ptww9j20u0103dhi.jpg" alt=""></p>
+<h2 id="0-二刷补充（后文括号内也是补充内容）"><a href="#0-二刷补充（后文括号内也是补充内容）" class="headerlink" title="0.二刷补充（后文括号内也是补充内容）"></a>0.二刷补充（后文括号内也是补充内容）</h2><p>——I’m waiting for someone.</p>
+<p>——Who ?</p>
+<p>——I don’t remember.</p>
+<p>两个床单精在初次见面互相say hi后的对话。</p>
+<p>二刷时特意留心了一些静止镜头的时间。两人开始时在床上的缠绵大概有三分钟，Rooney吃派足足五分钟！泪水最后滑落到鼻尖真是太让人心疼了。Casey躺尸到变床单精大概有半分钟，镜头就那样停留着，镜头内没有一个运动的物体，画面外的声音也基本没有。</p>
+<p>Casey回到过去后，自己生前创作的旋律在小女孩口中再次出现，非常短暂不明显。</p>
+<p>Party场景里的男士有一大段独白，可视为本片的主题。在永恒的维度下，讲我们到底有啥，又再推翻这些人事物的独一性和永恒性，回归到彻底的虚无观。</p>
+<p><strong>关于Casey成为床单精后</strong>：碎片感大部分从这里开始。</p>
+<h2 id="1-电影讲了啥（前方剧透）"><a href="#1-电影讲了啥（前方剧透）" class="headerlink" title="1.电影讲了啥（前方剧透）"></a>1.电影讲了啥（前方剧透）</h2><p><strong>A Ghost Story</strong>的中文译名有两个，“鬼故事”与“鬼魅浮生”。鬼故事自然是非常直白的翻译，而后者对电影叙事内容的概括非常形象。全片情节非常简单，连大段的对话台词也少见，大体上讲了Casey和Rooney扮演一对非常合拍的情侣，在一次意外车祸后，Casey死亡，但在医院陈尸之际，突然“复活”，成了一个“披着床单”的鬼。它变得有执念，又不可见，飘荡在生前与Rooney共同生活的屋子中，见证着恋人从崩溃到重新开始新生活，见证着恋人离开两人的居所（Rooney离开时在墙缝内塞入了一个纸条，Casey由此开始不断的想要得到它）。房屋变换主人，最后被拆毁（这里有一大段第三者的台词，算是对本片的主题阐述）。当执念之所都不复存在时，另一个与自己相似的鬼（花床单😂）不知道再该执念些什么，于是在废墟之上顷刻间化为真正的虚无。而Casey仍然在追寻着什么。（在它选择跳楼自杀后，它仍然没有摆脱飘荡的形态）此时，时间开始回转，它在那片土地上又一次见证了时间流逝所带来的世事变迁，和自己相干的不相干的（这里有他生前吟唱的旋律在另一个毫不相干的个体口中重现），甚至自己所亲身经历的。于是，这个披着床单且不可见的Casey和自己相遇（生前的及死后的，即有一个镜头里同时有两个ghost），和Rooney再一次相遇，或者说，这个自己变成了一个旁观者，从头到尾旁观着自己曾经亲身经历的感情，在时间线上的每一刻。它最终将自己执念追寻的东西确定为Rooney离开这个居所时，在墙缝里塞进的一张纸条，于是在它又一次的努力下，终于将其取出并打开，而它则顷刻间化为虚无。它也顷刻间化为虚无。</p>
+<p>通过文字简述的剧情，就会发现这部电影基本没有具体的叙事情节，不到90分钟的浮生是片段化的，闪回式的，零散破碎。这样零散的内容并没有使电影成为失败品，反而在极佳的剪辑节奏和配乐的帮助下，非常带感。</p>
+<p><img src="http://wx3.sinaimg.cn/mw690/6852e8d5gy1fginiixv7mj20m80m8tas.jpg" alt=""></p>
+<h2 id="2-从节奏说起"><a href="#2-从节奏说起" class="headerlink" title="2.从节奏说起"></a>2.从节奏说起</h2><p>这个话题我很久前就有欲望想去浅谈一下，当时是在思考“林奇感”究竟是怎么回事。“林奇感”被一些专业人士说是平常之物引发的不和谐，我想更深究的话，是一种奇怪的节奏所引发的不和谐。说话的停顿有节奏，镜头给到不停闪的灯是镜头节奏，甚至背景配乐也一直带动着一种节奏。这些节奏换一个节拍，很可能把物像元素呈现出搞笑的效果。我总觉得可能周星驰的电影与林奇爸爸的电影有一些共同的东西，但用了不同的节奏，使得前者迸发出喜剧效果，后者呈现出怪怖效果。</p>
+<p>回到鬼魅浮生。个人感受是这是一部带有实验性质的，诗歌化或MV式的电影，非贬义，只是因为剧情零碎，再加上极具节奏感的镜头剪辑。后来一查，果然导演是剪辑师出身。配乐乃至主题一曲我都非常喜欢，镜头有节奏，配乐也有节奏，二者的节奏又能相互配合。也有单个长时间的固定镜头画面，比如Rooney吃派一段（足足有五分钟！）：一口一口，咀嚼，落泪，情绪至，呕吐。有人抱怨这一段太闷，让人昏昏欲睡，我却看的兴起。这段非常“炫技”，炫的是静止镜头的内在节奏（对，即使如此都能感觉到有节奏），炫镜头面对对象的表演。这是Rooney在这部电影中，非常完整且长的一段表演，其它时刻是短片段式的，但这种完整且长的表演并不是情节的丰富起伏，而是无限聚焦放大单一情节，在一个角色，一个行为上去放大内在的起伏。</p>
+<p>而即使在长时间的固定镜头里，依然能感觉到一种内在节奏，依靠的是配乐和表演。</p>
+<p><img src="http://wx2.sinaimg.cn/mw690/6852e8d5gy1fhc0d1q6uvj20zk0qo459.jpg" alt=""></p>
+<h2 id="3-演员"><a href="#3-演员" class="headerlink" title="3.演员"></a>3.演员</h2><p>Rooney、Casey和Lowery的电影气质非常配。这里就不得不说两位主演的重要性了。</p>
+<p>Casey和Rooney的气质和表演风格，都极适合这种台词不多情绪情感内敛且丰富的电影。两人在床上的缠绵，Rooney单人的吃派桥段都没有任何台词，但爱意、哀伤是漫出荧屏的。此外，两人演情侣极具化学效果（开始时两人缠绵接吻大概有三分钟，极美）。如友邻所说，Casey和Rooney演情侣，就算闲聊九十分钟也乐意看。</p>
+<p>整个影片的手法风格主题都是非常私人化的，很难想象若缺了撑得起这种类型风格的表演，电影会变成什么样子，可能会沦为The Neon Demon那样，仅剩下对色彩配乐的印象。（不是说小范宁不好，只是仍觉得她的形象演时尚界麻豆不是很搭。）</p>
+<p>而一个关于<strong>执念</strong>的主题，总体基调自然是哀伤的，Rooney演绎这种压抑着的悲怆是能使人感同身受的，这意味着甚至不需要情节推动来使得观众置身于相同的情绪，而仅靠着观赏Rooney个人的表演即可达到。（Rooney吹上线…说到这里可以自动脑补Carol中被Cate“抛弃”后的表演。</p>
+<p><img src="http://wx4.sinaimg.cn/mw690/ec8e5b48gy1fhtqwvnc7ej21jk15o7si.jpg" alt=""><br><img src="http://wx2.sinaimg.cn/mw690/6852e8d5gy1fhdx5nqhu1j20u00t1dhk.jpg" alt=""></p>
+<p>Casey在影片中的多数时刻……都是一个床单精！就是在炫耀影帝即使披着床单，还是影帝！（kidding…实在因为两人都是本命，难以抑制夸赞的心）其实披着床单的时刻是被符号化了，重点还是在“未成精”前和Rooney的对手戏上，两人气质和表演的相搭。成精后感觉还是导演的作用更大一些，通过配乐和镜头运用，去展现一个无台词、无面部表情情况下压抑的悲伤情绪。</p>
+<p><img src="http://wx1.sinaimg.cn/mw690/6852e8d5gy1fhdx5n00t0j20u00t4jt0.jpg" alt=""></p>
+<h2 id="4-主题和审美"><a href="#4-主题和审美" class="headerlink" title="4.主题和审美"></a>4.主题和审美</h2><p>这部分讨论的是导演的输出，包括主题和审美。</p>
+<h3 id="（1）主题"><a href="#（1）主题" class="headerlink" title="（1）主题"></a>（1）主题</h3><p><strong><em>对主题的讨论很大程度都只是我个人的主观想法，并不代表这就是导演本人想法，但仍谢谢Lowery使我在电影之外被触发更多。</em></strong></p>
+<p>影片无论是被创造出发点还是最后呈现时所用的手法，都有独特之处。被创造的出发点据说是导演想拍一个披着床单的鬼……我所看的那场，从Casey披着床单出现后三分钟，笑声不断，而后来两只鬼隔窗交流，又是全场笑声。</p>
+<p>这是这部影片非常可爱的一点，在沉重压抑的主题下以这样一个ghost的形象产生一种荒谬的喜剧效果，但这种初期的荒谬感很快就被消解适应，披着床单的ghost完全阻隔了面部表情的作用，使其完全符号化，但与此同时也给观影者留下了个人的想象空间，可以尝试代入个人的主观感受。这一点不仅在ghost这一形象上有所体现。事实上，主角身份背景的模糊处理（甚至姓名也没有被明确告知）都与之一脉相承，不去具体具像化人物和故事，而是去传递一种每个人都应能共鸣的情绪情感。</p>
+<p><img src="http://wx2.sinaimg.cn/mw690/6b50008agy1fh5k1lusqwj211w0l0ad0.jpg" alt=""></p>
+<p>是什么样的主题引起了这样一种压抑悲伤的情绪情感 ？我个人的理解就是<strong>执念</strong>，更进一步说是<strong>对执着这一行为本身的执念</strong>，是<strong>对自我的执念</strong>。这个主题使我立刻想起了看过两遍的<strong>Personal Shopper</strong>（因为斯图尔特也是本命😶）惊喜的是，导演David Lowery在后来的一些采访中也表明，自己极喜爱斯图尔特的这部电影。</p>
+<p>回到鬼魅浮生。最开始很容易把它归结到<strong>对人的执念</strong>，这是非常容易理解的一种状态，而如果最终都只是表达这个主题，它并不会显得那么动人。电影在Rooney角色退场时开始带出更多可以去审视的东西：屋子里的人换了一茬又一茬，Casey仍旧飘荡在那个屋子里。这使人开始觉得Casey是<strong>对时空的执念</strong>，因为即使最初留恋的人已不在，他还是一个滞留下来or被困住的鬼魂。可直到房子轰然倒塌，连它的ghost伙伴都没有了理由继续存在，Casey仍然在那。时间线在这个时候也开始混乱，鬼魂经历的不是今天之后的明天，现在之后的未来，而是穿越回过去，非常遥远的、和他生命里的现在时完全无关的过去。</p>
+<p>这里有一个非常有意思的点，在当时观影时我并没有把握到（也是看电影不仔细…），而是这段时间看采访时才知道的。在穿越回过去后，Casey在那里听到一个和他完全无关的个体，在劳作时哼唱了他以为属于他的，他“创作”的曲调，完全一样的曲调。这里必须夸一下这首歌。夸这部电影的配乐好，一半原因可能都是因为喜欢这首作为该片灵魂的主题乐。第一次响起时就非常抓注意力，音乐的气质特征甚至超过了电影里的其它元素，使我隐隐怀疑这个曲子才是这部电影的灵魂……结果导演在访谈里真的有提到类似的话（附截图）。<br><img src="http://wx3.sinaimg.cn/mw1024/ec8e5b48gy1fhtkb2ecz5j215q0sgqav.jpg" alt=""></p>
+<p>再回到主题。随着故事情节推进，人与时空都被印证不是Casey身为鬼魂不肯离开的理由，主题突然落脚到<strong>对自我存在的执念</strong>，而此时两个时空下完全无关的个体哼唱出同一曲调无情又好笑的打破了这一点。“我”的创造物一旦被创造出来，成为一个独立的客体，会具备一种作为“我”生命延续的永恒之物。所以无论是追求刻骨铭心的爱情亦或从事真正的创作，都有执着于自我永恒的意味存在。可爱情伴随着肉身的覆灭（有时甚至不必生离死别）而消亡，创造之物即使永存，但并不是“我”的专属呢 ？一切追求更深刻之物即本质上对永恒的向往幻想，全部被打破。“我”所以为的独一无二的曲调，早已被这天地间经有无数毫不相干的个体之口哼唱，“我”所以为的自己独特的感受想法，早已被自我以为的其他个体所经历体会，<strong>“我”到底是什么呢 ？“我”还在执着什么呢 ？</strong></p>
+<p>披着床单的Casey一定是<strong>有所执</strong>的,所以意外的身亡只是使他换了一种形式继续飘荡。同时，他一定疑惑那个问题却不知怎么回答。心爱之人离开、房屋崩塌、失去鬼魂同伴、见证了时空流转都没有使他脱离鬼魂的形态，在不该停留的时空里停留。</p>
+<p>故事讲到这里，已经要比许多关于“执念”的电影表达出了更多的东西，但Lowery并没有停留在这里，他十分荒诞地把Casey最终的执着之物选定为一个<strong>塞在墙缝中的字条</strong>。米粒评价Lowery是个“<strong>虚无主义重症患者</strong>”。虚无到什么程度呢 ？他的电影里，那个身披床单的Casey飘荡了那么久，没有任何一个明确的理由能解释他为什么停留，为什么还不离去。观众即使理解他是处在茫然无主的状态，也期待他最终的自我消解能建立在一个能说服你我的，能承载意义重量的理由之上。结果，这个意义承载物竟是一张字条，荧屏外的我们甚至没机会看到字条上写着什么，或者有没有写些什么。</p>
+<p><img src="http://wx1.sinaimg.cn/mw690/ec8e5b48gy1fhtqwol7sij21kw1734e2.jpg" alt=""></p>
+<p>我个人非常喜欢这个“荒诞”的结尾，它真正体现了导演Lowery是个多么彻底的虚无主义者，可这种彻底并没有使这种价值观显得如想象中的压抑窒息，相反，确认肯定它后竟然出人意料的轻松。当不再执着于存在和离开需要一个更有意义的理由时，任何事物都可以成为trigger，结束眼前无止尽的停滞状态（有种”放自己一马”的意味）。所以当许多人观影后把执着放在了“字条上究竟写了什么”时,他们变成了另类的现实版还没有得到字条的那个Casey。不断的执着于一个明确的能说服自我的答案，往往只会求不得而陷入停滞状态，人们所以为的可以承担起答案的事物都被否定瓦解，如爱情、创造（物）。我理解的那个披着床单的Casey在经历了这一切后，最终明白了自己执着的是<strong>自我</strong>，是<strong>执着行为本身</strong>，当落脚点回到自身时，就不用再在意自身之外的那个答案究竟是什么，它可以是任意的。影片中的Casey把它选择为墙壁中的那个字条，将这种本质上是虚无状态的执念具象化，字条成为trigger，只需要得到它打开它，自己便解脱。</p>
+<p>这种轻松感不仅是主题内涵所带给人的，同样还依靠表达理念的承载物，但二者不是无关的，选择这样的承载物正是由于这个主题内涵。所以鬼魂可以是披着床单的形象，最终“答案”可以是一张没有重量的字条，看似戏谑却与故事内核一脉相承。</p>
+<h3 id="（2）审美"><a href="#（2）审美" class="headerlink" title="（2）审美"></a>（2）审美</h3><p>由于扯主题部分耗尽了表达欲望，不想扯这部分了……大家到时候看电影自己感受吧，大概就是色彩、构图、4:3的荧幕镜头、节奏、剪辑、配乐balabala。这种主题感觉大部分的受众其实不是很吃得下，但多亏导演审美极佳，包裹想法的外包装美且浪漫，一定程度上能直接触发观众的非理性体验。</p>
+<p><img src="http://wx3.sinaimg.cn/mw690/6852e8d5gy1ffq9lyn8zhj20zk0qo79t.jpg" alt=""></p>
+<p>（其实主要是因为语言表达水平太差，以匮乏的语言去论“审美”真是另类讽刺。）</p>
+<h2 id="5-对比"><a href="#5-对比" class="headerlink" title="5.对比"></a>5.对比</h2><h3 id="1-开场小短片Gift-Horse"><a href="#1-开场小短片Gift-Horse" class="headerlink" title="(1)开场小短片Gift Horse"></a>(1)开场小短片Gift Horse</h3><p>首先夸一下悉尼电影节的设置。看了两三场短片都属于购买的长片在开始播放前所附赠的，导演演员一般都属于新人，或者题材过于实验前卫，在投入市场进行效益转化方面还有困难。而这种方式的放映推广同时带给电影人和观众一个机会，新兴电影人有机会崭露头角或肆意表达自己前卫的理念和审美，观众有机会去认识或发现新兴电影人，接收到极难在商业市场上欣赏到的实验作品。</p>
+<p>Gift Horse短片被安排在A Ghost Story开始前，或许是因为二者都是超现实主义题材（其实我也不懂什么主义，乱用的词语…）。GH短片的主角母亲，突然在一觉醒来后发现自己身上开始发光，然后拼命想掩盖，最终落脚点好像是亲情 ？反正没太理解……再加上导演的呈现手法、新人演员的演绎都不是很抓人，和之后开始的鬼魅浮生一对比，我在心里默默感慨，人和人的天赋差异太大了吧……</p>
+<p>也不知道为嘛写这段，短片都记不清了。写它可能就是为了夸A Ghost Story真美啊，导演Lowery真厉害啊……</p>
+<h3 id="2-Personal-Shopper"><a href="#2-Personal-Shopper" class="headerlink" title="(2)Personal Shopper"></a>(2)Personal Shopper</h3><p>（也没力气写这段了）</p>
+<p>主题内涵和PS非常像，都是关于执念的电影，开始于爱情或亲情，而在最后Casey和斯图尔特都认清这种无法消解的执念是一种<strong>我执</strong>。不同的是表现手段。阿萨亚斯稍稍有点执着于术，有些刻意的去追求揉合多种类型题材或者为了照顾观众的理解力，呈现出来后总觉得差一点自然流畅感（有点匠气 ？），Lowery这部就流畅舒服许多，作为私人化的电影作品，有种爱谁谁我就这么拍了的感觉😂。当主题内涵和手法元素都是个人化的，且这个人又有不错的审美和执行力时，产出的作品就有一种完整感，即使这个故事简单，依旧可以成为一个得到更多注意力，激发他者更多感受的创造物。</p>
+<p>－－－－－－－－－－－－－－－－－－－－－－－－</p>
+<p>希望Lowery这个虚无主义重症患者能继续坚持他的个人化创作。❤️</p>
+<p><img src="http://ww3.sinaimg.cn/mw690/6852e8d5gw1fa19vy56kkj20u011hq4h.jpg" alt=""></p>
+<p><img src="http://wx2.sinaimg.cn/mw690/6852e8d5gy1fhbs3gzkqrj20zk0qodjj.jpg" alt=""></p>
+
+          
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
     <footer class="post-footer">
       
@@ -1228,6 +1207,10 @@ Time: 6/13/2017
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1240,13 +1223,17 @@ Time: 6/13/2017
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://leto27.github.io/2017/05/14/bella thorne/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LiYR">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://ww3.sinaimg.cn/mw690/ec8e5b48jw8fd6dx72xbhj20ku0lcjt8.jpg">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1259,16 +1246,8 @@ Time: 6/13/2017
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2017/05/14/bella thorne/" itemprop="url">
-                  Bella Thorne宣称自己是bi，就是炒作婊？
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2017/05/14/bella thorne/" itemprop="url">Bella Thorne宣称自己是bi，就是炒作婊？</a></h1>
         
 
         <div class="post-meta">
@@ -1309,7 +1288,9 @@ Time: 6/13/2017
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1318,32 +1299,34 @@ Time: 6/13/2017
       
         
           
-          Bella Thorne宣称自己是bi，就是炒作婊这个论断当然是s1上的小朋友提出来的，本来是为了看看豆豆的消息，没成想又变成了观察人类的绝佳机会，我再也不黑中国网友了，其实天下的网友一般黑，到哪里都是”傻逼“占据大多数。
-分析：该论断分为两部分：
-1、bi不是纯粹的gay or lesbian（这
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/05/14/bella thorne/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <h2 id="Bella-Thorne宣称自己是bi，就是炒作婊"><a href="#Bella-Thorne宣称自己是bi，就是炒作婊" class="headerlink" title="Bella Thorne宣称自己是bi，就是炒作婊"></a>Bella Thorne宣称自己是bi，就是炒作婊</h2><p>这个论断当然是s1上的小朋友提出来的，本来是为了看看豆豆的消息，没成想又变成了观察人类的绝佳机会，我再也不黑中国网友了，其实天下的网友一般黑，到哪里都是”傻逼“占据大多数。<br><img src="http://wx3.sinaimg.cn/mw1024/ec8e5b48gy1ffkpwqgh5sj20xi0d4dkh.jpg" alt="定义"></p>
+<h3 id="分析："><a href="#分析：" class="headerlink" title="分析："></a>分析：</h3><p>该论断分为两部分：</p>
+<p>1、<strong>bi不是纯粹的gay or lesbian</strong>（这种身份宣称对于某些活在label下的人而言很受伤，即，你谁啊，你不是我们圈儿的。）</p>
+<p>2、觉得你这么贴我们圈是想<strong>消费</strong>我们，自我炒作，完全是为了你个人利益来伤害我们感情（or金钱）。</p>
+<h3 id="解释："><a href="#解释：" class="headerlink" title="解释："></a>解释：</h3><p>1、这个太学术讨论了。如果我们不是从实际学术角度出发，比如写《边缘人群分类大全》，就别自我分裂了。在一个1000人的群体里，我想不通一个10人群体，还以4、6分出俩小圈是为了嘛？如蛋蛋说，最后都陷在了定义的泥潭里，很累。看看如今这个群体争取平权所使用的方式：love is love，不就是希望表达，在爱的层面上，我们和你们异性恋都没分别嘛。去掉label，才能减少对立。结果你反而枪口对着同样的弱势群体，厉害。</p>
+<p><strong><em>题外话</em></strong>:分类贴标签这种概念我猜是人类最初为了简化认识世界所做的理性尝试，但概念发展出来后的用途就不受控了，比如你资本我共产，你60后我90后，以标签和分类来造成人类的某种对立和分裂</p>
+<p>寻找某个身份标签对个体是有积极意义的，我猜是抱团取暖。人类总是很孤独的，如果进行绝对分类，每个人都独一，如果不那么在意，单以某些明显特质分一下类，自己找一个框套进去，可能在心理层面上有归属感？即使有这样的积极原因，活在标签下也是很可悲的一件事，因为这意味着你需要取暖，你只能依靠这种方式取暖，反而说明了你作为个体，独立性弱、不够强大。关于这部分请移步去看科学家种太阳的《为什么说同性恋不是狗》<br><strong><em>ps</em></strong>:注意一点，现实状况是已经产生标签和分类，然后人们去寻找自我归属的标签和分类来获得心理or物质层面的利益。（可以想象一个不具有任何标签分类的世界，人们是不需要自创标签来获得归属，大概就是你已经把全地球人当兄弟了，就没有动力在划分一个小圈来获得归属感）。对于人类社会最初的标签分类产生原因和条件我还想不太清楚。</p>
+<p>2、如果想清楚“标签是什么？能吃吗？”的问题，就自然谈不上会受到感情伤害了，那就是<strong>实际物质层面的利益</strong>可能会受损。假设bella真的就是想炒作，炒作必然是要获利，可能的获利有关注度（后续转化为金钱收益）、直接性金钱收益。</p>
+<p>先说后者，一个作品被贴上了lgbt标签，我很好奇是对非lgbt的吸引力更大还是lgbt群体的吸引力更大。如果你认为是对你那个群体吸引力更大，你作为其中一员，且还是看不惯她，不去消费就是，心疼你群体中的其他人花钱去支持她？喂喂，你管太宽啦！你有你的看法判断及支配自己金钱的权利，别人亦拥有独立的看法判断和金钱支配权。这也是我不认同活在标签下的一个重要原因，很容易跑偏去要求绑架标签下的其他个体。</p>
+<p>再看<strong>关注度</strong>问题。个体脱离环境必然无法成事。我想炒作，也得是这个点为”炒作点“啊，那是什么造成这个点就是”炒作点“的？是大的环境，是由千千万万个你我个体组成的这个环境。因为lgbt这个标签在现阶段还是特殊异常的，才显得耀眼，才吸引眼球。（异常非贬义，只是想表达在人类观念里还是非常态，不是指不正常啊）这你能咋怪？怪大环境为嘛觉得lgbt特殊？作为个体你能做到仅是去审视自己的想法行为，去做更文明的改变，仅此而已。人人都能顾好自己，大环境也就改变了。如果真是炒作，这也能看到好的一面，因为<strong>这还能炒作</strong>。为了吸引关注度，它就得是能摆在明面上的事物，可以想象在俄罗斯或ysl宗教国那样苛刻压抑的环境下，这种炒作都不可能发生。所以，若真是为了关注度来炒作：</p>
+<p><strong>一</strong>，怒大环境还是把lgbt当异类，做好自己期待未来的环境改变；<strong>二</strong>，庆幸人类世界里的某个社会下，已经有了很大的进步，这都可以作为明面上的事情说了！不会被直接丢石头判死刑。</p>
+<p>以上基于妹子真的是为了炒作的假设。但我<strong>不忍心</strong>做这种假设，她那么好看，我才不要那么恶意的去揣测别人动机，因为这件事于我而言<strong><em>根本没什么利益冲突</em></strong>。把人想的很坏这件事等你真的和人发生很大利益冲突时候再这样做吧，随随便便这样想，会对人类很绝望的。看看bella推特下的留言，可是还有奇怪言论认为“<strong><em>这是罪恶&amp;反自然的</em></strong>“，承认自己是bi就要引来这些攻击，我还是觉得妹子率性洒脱很勇敢，果然是95后！（看，我又贴标签了，反正我怂，我就代表95前了）</p>
+<h3 id="后话"><a href="#后话" class="headerlink" title="后话"></a>后话</h3><p>这是一篇16年8月25日的旧文，现在喜欢斯图尔特时又遇到了同样的神奇言论，导致我不得不再次翻出这篇来怼。其实不是非常切合我要评价的言论，因为所面对的言论本身非常没有理性逻辑可言，陷入了无根据的恶意瞎想，阴谋一论可以瓦解掉一切，哪有实实在在的真假可辨 ？若真是如此态度观念，喜欢这个世界喜欢这个世界里的某些人简直是自讨无趣，甚至我想不通，<strong><em>若你什么都不相信，什么都怀疑是假的，还怎么谈得上会喜欢会去爱 ？</em></strong></p>
+<p>让我们以<strong><em>斯图尔特式</em></strong>的关怀结尾：<br><strong>love you too, baby!</strong><br><img src="http://wx3.sinaimg.cn/mw1024/ec8e5b48ly1fe4qjci4otj215r0rsgvk.jpg" alt="定义"></p>
+
+          
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
     <footer class="post-footer">
       
@@ -1357,6 +1340,10 @@ Time: 6/13/2017
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1369,13 +1356,17 @@ Time: 6/13/2017
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://leto27.github.io/2016/08/21/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LiYR">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://ww3.sinaimg.cn/mw690/ec8e5b48jw8fd6dx72xbhj20ku0lcjt8.jpg">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1388,16 +1379,8 @@ Time: 6/13/2017
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2016/08/21/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2016/08/21/hello-world/" itemprop="url">Hello World</a></h1>
         
 
         <div class="post-meta">
@@ -1438,7 +1421,9 @@ Time: 6/13/2017
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1447,30 +1432,29 @@ Time: 6/13/2017
       
         
           
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2016/08/21/hello-world/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+          
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
     <footer class="post-footer">
       
@@ -1484,6 +1468,10 @@ Time: 6/13/2017
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1496,13 +1484,17 @@ Time: 6/13/2017
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://leto27.github.io/2016/08/17/梦幻泡影 如是我闻/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LiYR">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://ww3.sinaimg.cn/mw690/ec8e5b48jw8fd6dx72xbhj20ku0lcjt8.jpg">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1515,16 +1507,8 @@ Time: 6/13/2017
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2016/08/17/梦幻泡影 如是我闻/" itemprop="url">
-                  梦幻泡影 如是我闻
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2016/08/17/梦幻泡影 如是我闻/" itemprop="url">梦幻泡影 如是我闻</a></h1>
         
 
         <div class="post-meta">
@@ -1565,7 +1549,9 @@ Time: 6/13/2017
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1574,31 +1560,41 @@ Time: 6/13/2017
       
         
           
-          关于线上社交我猜人们都是有社交需求的，无论线上线下，甚至基本断绝与外界个体的联系时也是因为自身已分裂出多种角色，通过自言自语什么的来满足“社交需求”。我难以想象没有这种“互动”状态下人们要如何存在。所以我这里所指的完全是我自己臆想的一个概念，不要较真。
-我倾向于线上的社交，线下多多少少显得笨拙不自在
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2016/08/17/梦幻泡影 如是我闻/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <h2 id="关于线上社交"><a href="#关于线上社交" class="headerlink" title="关于线上社交"></a>关于线上社交</h2><p>我猜人们都是有社交需求的，无论线上线下，甚至基本断绝与外界个体的联系时也是因为自身已分裂出多种角色，通过自言自语什么的来满足“社交需求”。我难以想象没有这种“互动”状态下人们要如何存在。所以我这里所指的完全是我自己臆想的一个概念，不要较真。</p>
+<p>我倾向于线上的社交，线下多多少少显得笨拙不自在，我回忆了一下，自己若非有意甚至根本没有留意过互动个体的脸。不去真的在意“实体”，那么线下的互动基本失去了其意义。而线上社交因为在空间和时间上留有余地，且保证个体身份的隐匿性，带来的社交压力小许多，互动更自然放松，同时，无穷多样的社交对象在量与质上都增加了需求满足的可能性。这是它好的一面。<br><em>但这些优点同样是缺点。</em><br>面对真实个体所带来的压力会在某种程度上限制我们的行为，于内可能是不自由感，于外却能保证恶意行为的减少，这种有边界的自由才是真正的自由，对于全部个体而言都是好事。于是能看到，在线上少了这种真实个体带来的压力约束会导致更多的语言暴力，也许分摊到现实中在总量上并没有增多，但网络提供了聚集声音的可能，对于被攻击一方是非常残酷的。发声的一方同样受损，甄别信息进行判断的难度增加，从而更易化身为无脑跟风者，长此以往<strong>有损智力</strong>。<br><strong><em>ps</em></strong>:尽管前面分析线上社交压力小，但在面对社交对象量的增多和网络有聚集声音的特性下，社交压力也可能急剧增加。</p>
+<p>其实我不想这么严肃的讨论线上社交的优劣，写这篇的原因实际是由于它带给我一种很奇怪的感觉——与外界个体联结的微妙感。可能由于线上互动过于负面、私人生活的被入侵、自身身体（精神）状态不佳或害怕依赖度加深形成的反噬等原因，个体选择离开线上社交，这种离开是很容易的，但对于另一边与你互动过的个体而言，感觉微妙。</p>
+<ul>
+<li>我在去年的某个夜晚无意中在微博上看到一个抑郁症患者自杀的信息，在她发声意欲寻死的微博被大量转发后，人们聚集在评论里，希望能通过这屏幕上的字对这个现实个体产生一点积极影响，能挽回现实中的她。结局是人们联系到了她现实时空的人，将她及时送往了医院，后来又快过半个月时，姑娘发了一篇文章记录了她在医院里的一些生活片段，此后那个id下再也没有更新消息。我有经常清理关注人的强迫毛病，但我舍不得删掉这个id，它带给我的感觉很微妙，我不知道她现在还是否存在于这个现实世界，不知道她有没有摆脱严重的抑郁，有没有开心一点，我失去了和她的所有联结，但在这个虚拟世界下留下的痕迹，又让我觉得，我和她一直存在某种联结。</li>
+</ul>
+<ul>
+<li>南瓜也走了，关注了许多发声严肃理性的博主，他也许是最对胃口的，可能是由于他也病着，所以发声显得更“无所谓”与“消极”，这总是很戳我点。228天以前，也就是2016年1月1日，他很郑重的道了别，就再也没出现过，也许他还有其他渠道、分身，但在这个id下，我所认识的id下，他再也没出现过。<blockquote>
+<p>诚挚的跟大家道个别，我想尝试一个人生活一段时间，摆脱各种情感需求和支持，直面工作家庭的压力和烦难，以及内心的冲突，衷心感谢各位一直以来的陪伴和提点，祝大家新的一年一切顺利，幸福安康！</p>
+</blockquote>
+</li>
+</ul>
+<p>也不知道他的病有没有好一点，有没有减轻一点自己内心的冲突。 </p>
+<ul>
+<li>让我突然想起上面这两位的，是今天刚刚离开的一个在美国学习生活的中国姑娘，她的故事太“故事”了，曾经匿名发表自己的一段经历在一个关注者众多的帐号上，引来议论无数。后来她自己开了帐号去记录， 尽管已经很注重个人隐私的保护，但还是得到越来越多的关注，一夜涨粉数千。在昨日还和底下评论有趣互动，今早就清空了所有微博选择离开。我不知道她是不堪网上社交的压力，还是现实生活出现了问题，抑或是仅仅因为她想摆脱对于线上社交的过度依赖。无论何种原因，祝她一切都好。（她的故事超级可爱，秒杀一票虚拟作品）</li>
+</ul>
+<h3 id="我为什么要写这个"><a href="#我为什么要写这个" class="headerlink" title="我为什么要写这个"></a>我为什么要写这个</h3><p>因为征L同学推荐我使用<strong><em>markdown</em></strong>写东西啊，说这个超级好用，我试验了一下的确容易上手，但检验工具的最好方法就是使用工具，所以上面码的那些可能显得“<strong><em>你闲的嘛？写这些干嘛？</em></strong>”（可能我真的闲的），这都不是重点，重点是试验下工具。</p>
+<!--这里出问题了，＊使用的ok啊，但一大段都被标记，显示却是正常的-->
+<p>再说个题外话，这类工具的产生和被接受也是一件很有意思的事。某种程度上，计算机的发明不亚于火种的发现对人类文明的意义（应该没有太多人反对这个论断）。在其诞生之初，只能由极少数专业人士进行操作使用，而后为了在除科学领域内的其他大众性领域推广，为了在少数专业人士外的普通人中普及，这个技术工具做了很大调整和进步（不专业的说一句，这种进步是由于交互理念的出现？），总之是机器更接近人了。这是一种单方面的接近，即机器向大众靠近，向“傻瓜式”靠近，鼠标的诞生分摊了许多在键盘上完成的操作，好亦不好，比如你习惯了word的书写方式，就总要在写作过程中从键盘切换到鼠标上来调整字号、插入图片什么的，无形中牺牲了效率。而这也是markdown工具产品诞生的理念，即去提高这中间损失的效率。它不能诞生在十几年前，因为那时工具还以普及为首要目标，所持理念是<strong><em>怎么简单易推广怎么来</em></strong>，而如今工具已被普及，更重要的是你面对的市场对象素质也极大提高了（<a href="https://code.org" target="_blank" rel="external">编程一小时</a>），这个时候推出稍具难度（其实也没有很难）但能提高效率的工具就是有可能的。</p>
+<p><strong><em>祝未来的人类世界里，人人都是程序员！让我们共同迎接AI统治地球的那一刻！</em></strong>（其实我只是写不下去了，喊个口号赶紧结尾）</p>
+<p><img src="http://wx1.sinaimg.cn/large/ec8e5b48ly1fee69wxtaxj21kw1ah45c.jpg" alt="斯图尔特"></p>
+
+          
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
     <footer class="post-footer">
       
@@ -1612,6 +1608,10 @@ Time: 6/13/2017
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1640,83 +1640,71 @@ Time: 6/13/2017
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
     <div class="sidebar-inner">
 
       
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="https://ww3.sinaimg.cn/mw690/ec8e5b48jw8fd6dx72xbhj20ku0lcjt8.jpg"
-               alt="LiYR" />
-          <p class="site-author-name" itemprop="name">LiYR</p>
-           
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">LiYR</p>
               <p class="site-description motion-element" itemprop="description"></p>
-          
-        </div>
-        <nav class="site-state motion-element">
+          </div>
 
-          
-            <div class="site-state-item site-state-posts">
-              <a href="/archives">
-                <span class="site-state-item-count">10</span>
-                <span class="site-state-item-name">日志</span>
-              </a>
-            </div>
-          
+          <nav class="site-state motion-element">
 
-          
             
-            
-            <div class="site-state-item site-state-categories">
-              <a href="/categories/index.html">
-                <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">分类</span>
-              </a>
-            </div>
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-
-        <div class="links-of-author motion-element">
-          
-            
-              <span class="links-of-author-item">
-                <a href="http://www.weibo.com/vvtwins" target="_blank" title="Weibo">
-                  
-                    <i class="fa fa-fw fa-weibo"></i>
-                  
-                  Weibo
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">日志</span>
                 </a>
-              </span>
+              </div>
             
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
           
+
+          
+
+          
+          
+
+          
+          
+
+          
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
       </section>
 
       
@@ -1733,30 +1721,36 @@ Time: 6/13/2017
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy; 
-  <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">LiYR</span>
+
+  
 </div>
 
 
-<div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-</div>
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Pisces
-  </a>
-</div>
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
 
 
         
+
+
+
+
+
+
 
         
       </div>
@@ -1767,6 +1761,8 @@ Time: 6/13/2017
         <i class="fa fa-arrow-up"></i>
         
       </div>
+    
+
     
 
   </div>
@@ -1794,50 +1790,61 @@ Time: 6/13/2017
 
 
 
-  
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
-  
 
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
 
 
 
   
   
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
 
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
 
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
 
 
   
 
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
 
 
 
@@ -1867,19 +1874,26 @@ Time: 6/13/2017
 
 
 
+
+
+
+
+
+
+
   
 
 
 
 
 
+  
 
   
 
+  
 
-
-
-
+  
   
 
   
